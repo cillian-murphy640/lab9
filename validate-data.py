@@ -11,7 +11,7 @@ def main(argv):
     mobile = argv[-1]
     name = " ".join(argv[:-1])
 
-    if len(name) <= 15 and len(mobile) <= 10:
+    if len(name) <= 20 and len(mobile) <= 10:
         print("PASS")
     else:
         print("FAIL")
