@@ -1,0 +1,23 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the "main" branch
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  lab9-basic-tests:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - run: OUTPUT=$(python3 validate-data.py "pearse mccarthy" "0831122334")
+      - run: OUTPUT=$(python3 validate-data.py "pearse mccarthy" "08311223344")
+      - run: OUTPUT=$(python3 validate-data.py "pearseT mccarthy" "08311223344")
