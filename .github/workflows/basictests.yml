@@ -16,9 +16,20 @@ on:
 jobs:
   lab9-basic-tests:
     runs-on: ubuntu-latest
-    
     steps:
-      - uses: actions/checkout@v4 
-      - run: OUTPUT=$(python3 validate-data.py "pearse mccarthy" "0831122334")
-      - run: OUTPUT=$(python3 validate-data.py "pearse mccarthy" "08311223344")
-      - run: OUTPUT=$(python3 validate-data.py "pearseT mccarthy" "08311223344")
+      - name: Check out repository
+        uses: actions/checkout@v4
+        
+      - name: Run and verify output
+        run: |
+          OUTPUT=$(python3 validate-data.py "pearse mccarthy" "0831122334")
+          echo "Output: $OUTPUT"
+          [ "$OUTPUT" = "PASS" ] || { echo "Expected PASS"; exit 1; }
+
+          OUTPUT=$(python3 validate-data.py "pearse mccarthy" "08311223344")
+          echo "Output: $OUTPUT"
+          [ "$OUTPUT" = "FAIL" ] || { echo "Expected FAIL"; exit 1; }
+
+          OUTPUT=$(python3 validate-data.py "pearseT mccarthy" "0831122334")
+          echo "Output: $OUTPUT"
+          [ "$OUTPUT" = "FAIL" ] || { echo "Expected FAIL"; exit 1; }
