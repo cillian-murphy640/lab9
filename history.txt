@@ -1,0 +1,614 @@
+    1  git init
+    2  git branch -m master main
+    3  git remote add origin git@github.com:cillian-murphy640/devopsProj.git
+    4  git pull origin
+    5  ls
+    6  git pull origin main 
+    7  ls
+    8  git branch ONE-V1
+    9  git checkout ONE-V1
+   10  git status
+   11  cd ..
+   12  mkdir v2
+   13  cd v2
+   14  git init
+   15  git branch -m master main
+   16  git remote add origin git@github.com:cillian-murphy640/devopsProj.git
+   17  git pull origin
+   18  ls
+   19  git pull origin main
+   20  ls
+   21  git branch ONE-V2
+   22  git checkout ONE-V2
+   23  git add count1.sh 
+   24  git commit -m "ONE-V2 Branch"
+   25  git push -u origin ONE-V2 
+   26  nano count1.sh
+   27  git add count1.sh 
+   28  git commit -m "1(ONE)"
+   29  git push -u origin ONE-V2  
+   30  cd ..
+   31  cd v1
+   32  nano count1.sh
+   33  git add count1.sh
+   34  git commit -m "ONE(1)"
+   35  git push -u origin ONE-V1
+   36  cd ..
+   37  mkdir mergeTest
+   38  git init 
+   39  git branch -m master main
+   40  git remote add origin git@github.com:cillian-murphy640/devopsProj.git
+   41  git pull origin main
+   42  git merge ONE-V1
+   43  ls
+   44  rm count10.sh
+   45  rm count2.sh
+   46  rm count3.sh
+   47  rm count4.sh
+   48  rm count5.sh
+   49  rm count6.sh
+   50  rm count7.sh
+   51  rm count8.sh
+   52  rm count9.sh
+   53  ls
+   54  rm count1.sh
+   55  ls
+   56  rm .git
+   57  rm -rf .git
+   58  ls
+   59  cd mergetest
+   60  cd mergeTest
+   61  git init 
+   62  git branch -m master main
+   63  git remote add origin git@github.com:cillian-murphy640/devopsProj.git
+   64  git pull origin main
+   65  ls
+   66  git merge ONE-V1
+   67  git status
+   68  git checkout main
+   69  cd ..
+   70  cd v1
+   71  git add .
+   72  git commit "full v2" 
+   73  git commit -m "full v2" 
+   74  git status
+   75  git reset
+   76  git status
+   77  git add .
+   78  git commit -m "full v1"
+   79  git push -u origin main 
+   80  git push -u origin ONE-V1 
+   81  cd ..
+   82  cd mergetest
+   83  cd mergeTest
+   84  git status
+   85  git merge ONE-V1
+   86  bash count1.sh
+   87  git merge ONE-V1
+   88  clear 
+   89  ls
+   90  git merge ONE-V1
+   91  clear
+   92  ls
+   93  git pull origin main 
+   94  clear
+   95  ls
+   96  git status
+   97  git branch 
+   98  clear
+   99  git merge
+  100  git merge ONE-V1
+  101  git merge ONE-v1
+  102  git merge ONE-V1 
+  103  clear
+  104  git merge ONE-V1
+  105  git status
+  106  ls
+  107  git merge ONE-V1
+  108  cd ..
+  109  cd v1
+  110  git status
+  111  cd ..
+  112  cd mergeTest
+  113  git fetch origin
+  114  ls
+  115  clear
+  116  git merge ONE-V1
+  117  clear
+  118  bash count1.sh
+  119  git merge origin ONE-V1
+  120  git merge ONE-V1
+  121  clear
+  122  git merge origin/ONE-V1
+  123  git merge origin/ONE-V2
+  124  nano count1.sh
+  125  git merge origin/ONE-V2
+  126  ls
+  127  nano count1.sh
+  128  git merge origin/ONE-V2
+  129  nano count1.sh
+  130  git add count1.sh 
+  131  git commit -m "merge v2"
+  132  git push origin main 
+  133  cd ..
+  134  mkdir v1-2
+  135  mkdir v2-2
+  136  cd v1-2
+  137  git init
+  138  git branch -m master main
+  139  git remote add origin git@github.com:cillian-murphy640/devopsProj.git
+  140  git pull origin main
+  141  cd ..
+  142  cd v2-2
+  143  git init
+  144  git branch -m master main
+  145  git remote add origin git@github.com:cillian-murphy640/devopsProj.git
+  146  git pull origin main
+  147  cd ..
+  148  ls
+  149  cd v1-2 
+  150  git branch TWO-V1
+  151  git checkout TWO-V1
+  152  cd ..
+  153  cd v2-2
+  154  git branch TWO-V2
+  155  git checkout TWO-V2
+  156  cd ..
+  157  cd v1-2
+  158  nano count2.sh
+  159  git add .
+  160  git commit -m "TWO(2)"
+  161  git push origin TWO-V1
+  162  cd ..
+  163  cd v2-2
+  164  nano count2.sh
+  165  git add .
+  166  git commit -m "2(TWO)
+  167  "
+  168  git push origin TWO-V2
+  169  ls
+  170  mongosh "mongodb+srv://cluster0.a7yj7co.mongodb.net/" --apiVersion 1 --username mcillian640_db_user
+  171  ./installmongodb.sh
+  172  mongosh "mongodb+srv://cluster0.a7yj7co.mongodb.net/" --apiVersion 1 --username mcillian640_db_user
+  173  ls
+  174  nano lab4.txt
+  175  ls
+  176  cd devops
+  177  ls
+  178  mkdir test
+  179  cd test
+  180  git init
+  181  git branch -m master main
+  182  git init
+  183  git branch -m master main
+  184  clear
+  185  git remote origin git@github.com:pearse1104/X00226829.git
+  186  git add remote origin git@github.com:pearse1104/X00226829.git
+  187  git remote add  origin git@github.com:pearse1104/X00226829.git
+  188  git remote add origin git@github.com:pearse1104/X00226829.git
+  189  nano hello.txt
+  190  git add .
+  191  git commit -m "hi!"
+  192  git push origin main
+  193  ls
+  194  mkdir AITheory
+  195  cd AITheory
+  196  git init
+  197  git branch -m master main
+  198  git remote add origin https://github.com/stafa10/CA1Theory2Practice.git
+  199  git pull
+  200  ls
+  201  git pull main
+  202  git pull origin main
+  203  git add .
+  204  git commit -m "final EDA"
+  205  git push origin main
+  206  ls
+  207  cd devops
+  208  ls
+  209  mkdir week6
+  210  cd week6
+  211  gh auth 
+  212  clear
+  213  gh auth login
+  214  clear
+  215  gh auth login
+  216  gh repo create lab6 --public
+  217  gh collaborator 
+  218  clear
+  219  gh repo edit
+  220  git init
+  221  git branch -m master main
+  222  git remote add origin git@github.com:cillian-murphy640/lab6.git
+  223  gh repo edit cillian-murphy640/lab6 --add-collaborator "beepnight:push"
+  224  clear
+  225  gh repo edit cillian-murphy640/lab6 --add-collaborator beepnight:push
+  226  gh api PUT repos/:cillian-murphy640/:lab6/collaborators/beepnight
+  227  gh api -X PUT repos/:cillian-murphy640/:lab6/collaborators/beepnight
+  228  clear
+  229  gh api -X PUT repos/:cillian-murphy640/:lab6/collaborators/beepnight
+  230  clear
+  231  gh api -X PUT repos/cillian-murphy640/lab6/collaborators/beepnight
+  232  clear
+  233  gh repo edit cillian-murphy640/lab6 --add-collaborators "beepnight:push"
+  234  gh repo edit cillian-murphy640/lab6 --add-collaborator "beepnight:push"
+  235  gh api -X PUT repos/cillian-murphy640/lab6/collaborators beepnight
+  236  gh api -X PUT repos/:cillian-murphy640/:lab6:/collaborators/:beepnight
+  237  gh api   --method PUT   -H "Accept: application/vnd.github+json"   -H "X-GitHub-Api-Version: 2026-03-10"   /repos/cillian-murphy64/lab6/collaborators/beepnight    -f 'permission=push'
+  238  gh api   --method PUT   -H "Accept: application/vnd.github+json"   -H "X-GitHub-Api-Version: 2026-03-10"   /repos/cillian-murphy640/lab6/collaborators/beepnight    -f 'permission=push'
+  239  gh api   --method DELETE   -H "Accept: application/vnd.github+json"   -H "X-GitHub-Api-Version: 2026-03-10"   /repos/cillian-murphy640/lab6/collaborators/beepnight    -f 'permission=push'
+  240  gh api   --method DELETE   -H "Accept: application/vnd.github+json"   -H "X-GitHub-Api-Version: 2026-03-10"   /repos/cillian-murphy640/lab6/collaborators/beepnight
+  241  gh api   --method DELETE   -H "Accept: application/vnd.github+json"   -H "X-GitHub-Api-Version: 2026-03-10"   /repos/cillian-murphy640/lab6/collaborators/beepnight   
+  242  gh api   --method PUT   -H "Accept: application/vnd.github+json"   -H "X-GitHub-Api-Version: 2026-03-10"   /repos/cillian-murphy640/lab6/collaborators/beepnight    -f 'permission=push'
+  243  gh issue create -assignee "@me" --title "create helloworld echo file"
+  244  gh issue create --assignee "@me" --title "create helloworld echo file"
+  245  gh issue create --assignee "@me" --title "create helloworld echo file" --type Enhancement
+  246  gh issue create --assignee "@me" --title "create helloworld echo file" --label enhancement
+  247  git branch Q12345
+  248  git branch -b Q12345
+  249  clear
+  250  git checkout -b Q12345
+  251  gh api   --method GET   -H "Accept: application/vnd.github+json"   -H "X-GitHub-Api-Version: 2026-03-10"   /repos/cillian-murphy640/lab6/collaborators/beepnight
+  252  gh api   --method GET   -H "Accept: application/vnd.github+json"   -H "X-GitHub-Api-Version: 2026-03-10"   /repos/cillian-murphy640/lab6/collaborators/
+  253  ls
+  254  cd devops
+  255  cd week6
+  256  gh list
+  257  clear
+  258  gh view --jq '.[]login
+  259  '
+  260  gh api /repos/cillian-murpht640/lab6/collaborators --jq '.[]login
+  261  '
+  262  gh api --method GET /repos/cillian-murpht640/lab6/collaborators --jq '.[]login'
+  263  gh api   -H "Accept: application/vnd.github+json"   -H "X-GitHub-Api-Version: 2026-03-10"   /repos/cillian-murphy640/lab6/collaborators
+  264  nano q1.sh
+  265  nano q2.sh
+  266  git status
+  267  nano q3.sh
+  268  nano q4.sh
+  269  nano q5.sh
+  270  git push origin Q12345
+  271  git add .
+  272  git commit .
+  273  git push origin Q12345
+  274  gh pr merge Q12345
+  275  gh pr checkout -b Q12345
+  276  gh pr create --title "merge Q12345"
+  277  git checkout main
+  278  gh pr create --title "merge Q12345"
+  279  gh pr merge Q12345
+  280  git checkout Q12345
+  281  git checkout main
+  282  git branch -m master main
+  283  git checkout -b main
+  284  git add .
+  285  git commit -m ""
+  286  git push -u origin main 
+  287  git pr merge Q12345
+  288  gh pr merge Q12345
+  289  git checkout Q12345
+  290  git pr create -merge Q12345
+  291  gh pr create -merge Q12345
+  292  gh pr create --title "merhe Q12345" --b Q12345
+  293  gh pr create --title "merhe Q12345" -b Q12345
+  294  gh pr create --title "merge Q12345" -b Q12345
+  295  git status
+  296  git checkout main
+  297  gh pr create --title "merge Q12345" -b Q12345
+  298  clear
+  299  ls
+  300  nano q1
+  301  nano q1.sh
+  302  nano q2.sh
+  303  nano q3.sh
+  304  nano q5.sh
+  305  nano q4.sh
+  306  bash q1.sh
+  307  bash q2.sh
+  308  bash q3.sh
+  309  bash q4.sh
+  310  bash q5.sh
+  311  nano q5.sh
+  312  gh issue create --asignee '@me' --title 'create helloworld echo file' --label enhancement
+  313  gh issue create --asignee "@me" --title 'create helloworld echo file' --label enhancement
+  314  gh issue create --assignee "@me" --title 'create helloworld echo file' --label enhancement
+  315  nano q5.sh
+  316  git init
+  317  git remote add origin git@github.com:cillian-murphy640/lab6.git
+  318  git status
+  319  git branch Q12345
+  320  git status
+  321  rm -r .git
+  322  y
+  323  git init
+  324  git branch -m master main
+  325  git add origin git@github.com:cillian-murphy640/lab6.git
+  326  git remote add origin git@github.com:cillian-murphy640/lab6.git
+  327  git status
+  328  git branch Q12345
+  329  git branch -b Q12345
+  330  git branch Q12345
+  331  git status
+  332  git branch -m Q12345
+  333  git status
+  334  git branch -m main
+  335  git status
+  336  git branch q12345
+  337  git branch "q12345"
+  338  git checkout -b Q12345
+  339  git status
+  340  git checkout main
+  341  git branch -m main
+  342  git status
+  343  git pull
+  344  ls
+  345  git branch main
+  346  git branch test
+  347  git status
+  348  git branch -m main
+  349  git branch Q12345
+  350  cd ..
+  351  mkdir week6-2
+  352  cd week6-2
+  353  git init
+  354  git branch -m master main
+  355  git remote add origin git@github.com:cillian-murphy640/lab6.git
+  356  git pull origin main
+  357  nano test.sh 
+  358  git add .
+  359  git commit -m "test" 
+  360  git push origin main
+  361  cd ..
+  362  cd week6
+  363  mv q1.sh ../week6-2
+  364  mv q2.sh ../week6-2
+  365  mv q3.sh ../week6-2
+  366  mv q4.sh ../week6-2
+  367  mv q5.sh ../week6-2
+  368  cd ..
+  369  cd week6-2
+  370  ls
+  371  git branch Q12345
+  372  git checkout Q12345
+  373  git add .
+  374  git commit -m "Q12345"
+  375  git push origin Q12345
+  376  git checkout main
+  377  gh pr merge -b Q12345
+  378  gh pr create -b Q12345
+  379  git checkout Q12345
+  380  gh pr create -B main
+  381  git status
+  382  git checkout main
+  383  git merge -B Q12345
+  384  git pr merge -B Q12345
+  385  gh pr merge -B Q12345
+  386  gh pr merge Q12345
+  387  cd ..
+  388  cd week6-2
+  389  ls
+  390  git status
+  391  ls
+  392  git pull origin main
+  393  ls
+  394  nano q7.sh
+  395  nano q8.sh
+  396  git status
+  397  git status
+  398  git add .
+  399  git commit -m "Q7 + 8"
+  400  git push origin main
+  401  ls
+  402  nano lab5.txt
+  403  ./installmongodb.sh
+  404  mongosh "mongodb+srv://cluster0.a7yj7co.mongodb.net/" --apiVersion 1 --username mcillian640_db_user
+  405  git config --global init.defaultBranch main
+  406  ls
+  407  cd devops
+  408  mkdir CA1-Q1
+  409  cd CA1-Q1
+  410  git clone pearse1104/CA1-MONDAY
+  411  git clone https://github.com/pearse1104/CA1-MONDAY
+  412  ls
+  413  cd CA1-MONDAY
+  414  ls
+  415  bash runme.txt
+  416  ls
+  417  git remote add origin git@github.com:cillian-murphy640/devopsCA1.git
+  418  git remote add secondary git@github.com:cillian-murphy640/devopsCA1.git
+  419  git add .
+  420  git commit -m "me.txt"
+  421  git push -u secondary main 
+  422  ls
+  423  gh project link 3 --owner "@me" --repo pearse1104/X00226829
+  424  gh project link 3 --owner "pearse1104" --repo pearse1104/X00226829
+  425  gh auth refresh -s read:project
+  426  gh auth login
+  427  git clone https://github.com/pearse1104/X00226829
+  428  gh auth login
+  429  gh project link 3 --owner "pearse1104" --repo pearse1104/X00226829
+  430  git clone git@github.com:pearse1104/X00226829.git
+  431  ls
+  432  cp runme.sh ./x00226829
+  433  cp ./runme.sh ./x00226829
+  434  mv runme.sh ./x00226829
+  435  ls
+  436  cp ./runme.sh ./x00226829
+  437  cp ./runme.txt ./x00226829
+  438  ls
+  439  mv runme.txt x00226829
+  440  ls
+  441  cd x00226829
+  442  cd ./x00226829
+  443  cd ./X00226829
+  444  ls
+  445  cd ..
+  446  git pull
+  447  ls
+  448  mv x00226829 runme.txt
+  449  ls
+  450  mv runme.txt ./x00226829
+  451  ls
+  452  mv x00226829 runme.txt
+  453  ls
+  454  mv ./runme.txt ./x00226829
+  455  ls
+  456  mv x00226829 runme.txt
+  457  ls
+  458  cd x00226829
+  459  cd X00226829
+  460  cd ..
+  461  ls
+  462  cp ./me.txt ./X00226829
+  463  ls
+  464  cd X00226829
+  465  ls
+  466  git add .
+  467  git commit -m "me.txt and runme.txt" 
+  468  git push -u origin main 
+  469  git branch ca1branch
+  470  nano me.txt
+  471  git add .
+  472  git commit -m "ca1ver2"
+  473  git push -u origin ca1branch
+  474  git checkout main
+  475  git merge ca1branch
+  476  git status
+  477  checkout ca1branch
+  478  git checkout ca1branch
+  479  nano me.txt
+  480  git add.
+  481  git add .
+  482  git commit -m "ca1ver2"
+  483  git push -u origin ca1branch
+  484  git checkout main
+  485  git merge ca1branch
+  486  hit history > history.txt
+  487  git history > history.txt
+  488  git log > history.txt
+  489  git add /
+  490  git add .
+  491  git gommit -m ""
+  492  git commit -m ""
+  493  git commit -m "a"
+  494  git push -u origin main
+  495  git pull
+  496  git push -u origin main -ff-only
+  497  git status
+  498  git reset
+  499  cd ..
+  500  git clone https://github.com/pearse1104/X00226829
+  501  ls
+  502  cd devops
+  503  ls
+  504  mkdir week9
+  505  cd week9
+  506  gh repo create lab9 --public
+  507  gh label create EPIC
+  508  gh label create EPIC --repo https://github.com/cillian-murphy640/lab9
+  509  gh issue create "do lab9" --repo https://github.com/cillian-murphy640/lab9 --label EPIC
+  510  gh issue create do lab9 --repo https://github.com/cillian-murphy640/lab9 --label EPIC
+  511  gh issue create EPIC --repo https://github.com/cillian-murphy640/lab9 --title "do lab9"
+  512  gh issue create --repo https://github.com/cillian-murphy640/lab9 --title "do lab9" --label EPIC
+  513  gh issue create --repo https://github.com/cillian-murphy640/lab9 --title "create validate-data script" --label enhancement --assignee "@me"
+  514  nano validate-data.sh
+  515  bash validate-data.sh "pearse mccarthy" "0831122334"
+  516  nano validate-data.sh
+  517  bash validate-data.sh "pearse mccarthy" "0831122334"
+  518  clear
+  519  nano validate-data.sh
+  520  mv validate-data.sh validate-data.py
+  521  ls
+  522  nano validate-data.py
+  523  bash validate-data.py "pearse mccarthy" "0831122334"
+  524  python3 validate-data.py "pearse mccarthy" "0831122334"
+  525  python3 validate-data.py "pearse mccarthy" "08311223344"
+  526  python3 validate-data.py "pearseT mccarthy" "08311223344"
+  527  gh issue create --repo https://github.com/cillian-murphy640/lab9 --title "create yaml test script" --label enhancement --assignee "@me"
+  528  cd .github
+  529  clear
+  530  git init
+  531  cd .github
+  532  clear
+  533  git clone git@github.com:cillian-murphy640/lab9.git
+  534  git status
+  535  git init
+  536  git status
+  537  cd .github
+  538  ls
+  539  git add .
+  540  git status
+  541  ls
+  542  rmdir lab9
+  543  rm -rf lab9
+  544  ls
+  545  git init
+  546  git remote add origin git@github.com:cillian-murphy640/lab9.git
+  547  git add .
+  548  git commit -m "val data file"
+  549  git push -u origin main
+  550  git pull
+  551* 
+  552  git add .
+  553  git commit -m "val data file"
+  554  git push -u origin main
+  555  git push --help
+  556  git push -u -ff origin main
+  557  ls
+  558  nano validate-data
+  559  nano validate-data.py
+  560  git add .
+  561  git commit 
+  562  git push origin main
+  563  nano validate-data.py
+  564  git add .
+  565  git commit -m "test2"
+  566  git push origin main
+  567  git reset 
+  568  git status
+  569  git pull
+  570  git status
+  571  git add .
+  572  git commit -m "t3"
+  573  git push origin main
+  574  cd ..
+  575  rm -rf ./week9 
+  576  mkdir week9
+  577  cd week9
+  578  git clone git@github.com:cillian-murphy640/lab9.git
+  579  ls
+  580  cd lab9
+  581  nano validate-data.py
+  582  git add .
+  583  git commit -m "edit validate"
+  584  git push origin main
+  585  git pull origin main
+  586  nano validate-data.py
+  587  git add .
+  588  git commit -m "t3 with new workflow"
+  589  git push origin main
+  590  nano validate-data.py
+  591  git pull
+  592  git pull origin main
+  593  nano validate-data.py
+  594  git add .
+  595  git commit -m "test4"
+  596  git push origin main
+  597  git branch test
+  598  git checkout test
+  599  ls
+  600  nano validate-data.py
+  601  git add .
+  602  git commit -m "test push" 
+  603  git push origin test
+  604  nano validate-data.py
+  605  git add .
+  606  git commit -m "test push2"
+  607  git push origin test
+  608  git pull
+  609  git pull origin test
+  610  nano validate-data.py
+  611  git add .
+  612  git commit -m "workflow test on branch"
+  613  git push origin test
+  614  history>history.txt
